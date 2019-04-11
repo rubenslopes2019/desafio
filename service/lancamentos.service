@@ -1,0 +1,26 @@
+(function() {
+    'use strict';
+
+    /**
+     * @ngdoc service
+     * @name HistoricoAcoesService
+     * @description
+     * # HistoricoAcoesService
+     * Service in the portalvarejistaApp.
+     */
+  angular.module('portalvarejistaApp.utils')
+    .service('LancamentosService', function ($http, AbstractService) {
+
+      function getLancamentos() {
+        AbstractService.setUri('', 'lancamento-conta-legado');
+        return AbstractService.get();
+      }
+
+      var service = {
+           getLancamentos: getLancamentos,
+       };
+
+            return service;
+       });
+
+})();

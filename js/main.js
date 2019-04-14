@@ -1,7 +1,9 @@
-var app = angular.module('myApp', []);
-app.controller("myCtrl", function ($http, $scope) {
-    $http.get('http://viacep.com.br/ws/81350000/json').then(function (response) {
-        $scope.resultado = response.data;
-        console.log(response);
-    });
-});
+angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
+.config(function($routeProvider, $locationProvider) {
+
+	$locationProvider.html5Mode(true);
+
+	$routeProvider.when('', {
+		controller: 'DesafioController',
+	});
+}); 

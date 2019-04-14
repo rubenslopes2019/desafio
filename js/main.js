@@ -1,4 +1,1 @@
-angular.module('alurapic', ['ngAnimate', 'ngRoute'])
-.config(function($routeProvider, $locationProvider) {
-	
-}); 
+angular.module('alurapic', []); 

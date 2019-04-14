@@ -32,7 +32,6 @@
 	  {
 		"lancamentoContaCorrenteCliente": {
 		  "numeroRemessaBanco": 64320626054,
-		  "dadosAnaliticoLancamentoFinanceiroCliente": [],
 		  "nomeSituacaoRemessa": "Pago",
 		  "dadosDomicilioBancario": {
 			"codigoBanco": 123,

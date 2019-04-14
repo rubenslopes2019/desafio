@@ -1,6 +1,9 @@
 angular.module('alurapic', ['ngAnimate', 'ngRoute'])
 .config(function($routeProvider, $locationProvider) {
-	$routeProvider.when('/principal', {
+	
+	console.log($routeProvider);
+	var a  = $routeProvider;
+	$routeProvider.when('', {
 		templateUrl: 'index.html',
 		controller: 'DesafioController',
 	});

@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
     <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
     <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
@@ -1434,6 +1435,12 @@
             
   <div id="minhaDiv" ng-init="MinhaDiv = true" ng-show="MinhaDiv">Conteudo</div>
   <button type="button" ng-click="MinhaDiv = !MinhaDiv">Mostrar / Esconder</button>
+            
+               <ul>
+            <li ng-repeat="data in myData">
+                {{data.quantidadeLancamentos}}
+            </li>
+        </ul>
     
 
                                         <table class="table">

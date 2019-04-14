@@ -1,13 +1,13 @@
 angular.module('alurapic').controller('DesafioController', function($scope, $http) {
 	
-bairro: string;
-    constructor(http: Http){
+	$scope.lancamentos = []; 
 
-        http.get('http://viacep.com.br/ws/81350000/json')
-        .subscribe(res => {
-           this.bairro = res.json().bairro;
-           console.log(this.bairro);
-           // Cidade Industrial
-        });
-    }
+	$http.get("http://viacep.com.br/ws/81350000/json")
+	.success(function(retorno) {
+		console.log(retorno);
+		$scope.lancamentos = retorno; // não precisa fazer retorno.data
+	})
+	.error(function(erro) {
+		console.log(erro);
+	});
 });

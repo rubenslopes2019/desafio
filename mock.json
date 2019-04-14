@@ -1,0 +1,56 @@
+{
+    "alexa": {
+        "#text": "",
+        "item": {
+            "@attributes": {
+                "name": "MenuPrincipal",
+                "label": "Menu Principal"
+            },
+            "#text": "",
+            "children": {
+                "#text": "",
+                "child": [{
+                        "@attributes": {
+                            "id": "mnu1"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu2"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu3"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu4"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu5"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu6"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu7"
+                        }
+                    },
+                    {
+                        "@attributes": {
+                            "id": "mnu8"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

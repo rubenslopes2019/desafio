@@ -1,6 +1,6 @@
 angular.module('alurapic').controller('DesafioController', function($scope, $http) {
 	
-	$scope.lancamentos = []; 
+	$scope.lancamentos = {}; 
 
 	$http.get("lancamento-conta-legado.json")
 	.success(function(retorno) {

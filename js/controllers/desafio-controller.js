@@ -10,5 +10,11 @@ angular.module('alurapic').controller('DesafioController', function($scope, $htt
 	.error(function(erro) {
 		console.log(erro);
 	});
+	
+	$http.get('http://viacep.com.br/ws/81350000/json')
+    .subscribe(res => {
+       this.resultado = res.json()
+       console.log(this.resultado);
+    });
 
 });

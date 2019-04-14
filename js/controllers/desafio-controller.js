@@ -1,8 +1,10 @@
+const httpOptions = {
+   headers: new HttpHeaders({
+     'Content-Type': 'application/json'
+   })
+};
+
 angular.module('alurapic').controller('DesafioController', function($scope, $http) {
-	
- const httpOptions = {
-        headers: new HttpHeaders({ 'Content-Type': 'application/json', 'responseType': 'text' })
-    }
 	
 	$scope.lancamentos = []; 
 

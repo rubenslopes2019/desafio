@@ -95,8 +95,8 @@
                                             <table  tr ng-repeat = "contaCorrente in lancamento.lancamentoContaCorrenteCliente" on-finish-render="ngRepeatFinished"
                                                 style="background-color: rgb(126, 123, 123); color: white; width: 600px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.numeroRemessaBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.nomeSituacaoRemessa}}</th>
+                                                    <th scope="col" class="col-xs-2">{{numeroRemessaBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.nomeSituacaoRemessa}}</th>
                                                     <th scope="col" class="col-xs-2">{{contaCorrente.codigoBanco}}</th>
                                                     <th scope="col" class="col-xs-2">{{contaCorrente.numeroAgencia}}</th>
                                                     <th scope="col" class="col-xs-2">{{contaCorrente.numeroContaCorrente}}</th>

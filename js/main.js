@@ -1,1 +1,1 @@
-angular.module('alurapic', [dirPagination]); 
+angular.module('alurapic', ['angularUtils.directives.dirPagination']); 

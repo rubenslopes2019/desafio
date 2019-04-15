@@ -2,6 +2,8 @@ angular.module('alurapic').controller('DesafioController', function($scope, $htt
 	
 	$scope.lancamentos = []; 
 	$scope.listaControleLancamento = []; 
+	$scope.lancamentoContaCorrenteCliente = [];
+	$scope.dadosDomicilioBancario = []; 
 	$scope.totalControleLancamento = []; 
 	$scope.indice;
 	$scope.tamanhoPagina; 
@@ -11,6 +13,8 @@ angular.module('alurapic').controller('DesafioController', function($scope, $htt
 	.success(function(lancamentos) {
 		$scope.lancamentos = JSON.stringify(lancamentos);
 		$scope.listaControleLancamento = lancamentos.listaControleLancamento;
+		$scope.lancamentoContaCorrenteCliente = listaControleLancamento.lancamentoContaCorrenteCliente;
+		$scope.dadosDomicilioBancario = lancamentoContaCorrenteCliente.dadosDomicilioBancario;
 		$scope.totalControleLancamento = lancamentos.totalControleLancamento;
 		$scope.indice = lancamentos.indice;
 		$scope.tamanhoPagina = lancamentos.tamanhoPagina;

@@ -1,4 +1,4 @@
-angular.module('alurapic').controller('DesafioController', function($scope, $http) {
+angular.module('cielo').controller('DesafioController', function($scope, $http) {
 	
 	$scope.lancamentos = []; 
 	$scope.listaControleLancamento = []; 

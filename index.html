@@ -14,6 +14,7 @@
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/controllers/desafio-controller.js"></script>
+    <script src="dirPagination.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
     <script type="text/javascript" src="https://checkout.cielo.com.br/ruxitagentjs_ICA2SVfgjqr_10163190401123328.js"
     data-dtconfig="rid=RID_2418|rpid=-1739211819|domain=cielo.com.br|reportUrl=/rb_bf69628unf|app=80671b1e80cca052|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|featureHash=ICA2SVfgjqr|dpvc=1|lastModification=1555010873067|srsr=25000|dtVersion=10163190401123328|tp=500,50,0,1|rdnt=1|uxrgce=1|bp=2|agentUri=/ruxitagentjs_ICA2SVfgjqr_10163190401123328.js"></script>
@@ -45,9 +46,10 @@
                         <section _ngcontent-c2="" class="vsc-requests" id="vsc-requests">
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
-                                ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
+                                dir-paginate="lancamento in listaControleLancamento|orderBy:sortKey:reverse|itemsPerPage:1">
+                               <!-- ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
                                 class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == {{lancamento.indice}} -1">
-                                                 
+                               -->                 
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
@@ -151,7 +153,7 @@
                                                     mat-raised-button="" class="mat-raised-button mat-accent"
                                                     data-analyticsaction="Formulário"
                                                      style="height: 30px; width: 100px"
-                                                     ng-click="{{lancamento.indice}} == {{lancamento.indice}} - 1"><span
+                                                     ng-click="{{lancamento.indice}} = {{lancamento.indice}} - 1"><span
                                                         class="mat-button-wrapper">anterior</span>
                                                     <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                                     <div class="mat-button-focus-overlay"></div>
@@ -160,7 +162,7 @@
                                                     mat-raised-button="" class="mat-raised-button mat-accent"
                                                     data-analyticsaction="Formulário"
                                                      style="height: 30px; width: 100px"
-                                                    ng-click="{{lancamento.indice}} == {{lancamento.indice}} + 1"><span
+                                                    ng-click="{{lancamento.indice}} = {{lancamento.indice}} + 1"><span
                                                         class="mat-button-wrapper">Proximo</span>
                                                     <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                                     <div class="mat-button-focus-overlay"></div>
@@ -178,6 +180,8 @@
                                     </table>
                                 </div>
                             </div>
+
+                            <dir-pagination-controls max-size="1" boundary-links="true"></dir-pagination-controls>   
                         </section>
                     </vsc-requests>
                 </section>

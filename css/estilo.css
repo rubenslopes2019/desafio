@@ -115,8 +115,14 @@
             }
 
             .vsc-requests[_ngcontent-c2] .vsc-container[_ngcontent-c2] {
-                width: 95%;
+                width: 98%;
                 display: flex
+            }
+        }
+
+        @media only screen and (max-width:600px)  {
+            .vsc-requests[_ngcontent-c2] {
+                width: 600px;
             }
         }
 

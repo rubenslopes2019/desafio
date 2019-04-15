@@ -54,14 +54,14 @@
 
 
 
-                                    <table
+                                    <table ng-repeat="lancamento in lancamentos track by $index"
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
-                                            <th class="col-xs-4">Qtd de Lançamento:</br>{{lancamentos.totalControleLancamento}}</th>
-                                            <th class="col-xs-4">Qtd de Remessa: </br>432</th>
+                                            <th class="col-xs-4">Qtd de Lançamento:</br>{{lancamento.totalControleLancamento}}</th>
+                                            <th class="col-xs-4">Qtd de Remessa: </br>999</th>
                                             <th class="col-xs-4"
                                                 style="background-color:#00aeef; border-top-right-radius: 25px; border-bottom-left-radius: 25px; color: white">
-                                                Valor do Lanç: (R$) </br>{{lancamentos.totalControleLancamento.valorLancamentos}}</th>
+                                                Valor do Lanç: (R$) </br>{{lancamento.totalControleLancamento.valorLancamentos}}</th>
                                         </tr>
                                     </table>
                                     <h2 _ngcontent-c2="" class="vsc-requests__h2; col-xs-12" id="vsc-requests-h2">

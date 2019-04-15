@@ -46,22 +46,14 @@
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders">
                                                  
-                    		<div>
-					<div>
-						<h3>teste123:{{lancamentos}}</h3>
-					</div>
-                                    </div>
-
-
-
-                                    <table ng-repeat="totalControleLancamento in lancamentos.totalControleLancamento track by $index"
+                                    <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
                                             <th class="col-xs-4">Qtd de Lançamento:</br>111111</th>
                                             <th class="col-xs-4">Qtd de Remessa: </br>999</th>
                                             <th class="col-xs-4"
                                                 style="background-color:#00aeef; border-top-right-radius: 25px; border-bottom-left-radius: 25px; color: white">
-                                                Valor do Lanç: (R$) </br>{{lancamento.totalControleLancamento.valorLancamentos}}</th>
+                                                Valor do Lanç: (R$) </br>{{totalControleLancamento.valorLancamentos}}</th>
                                         </tr>
                                     </table>
                                     <h2 _ngcontent-c2="" class="vsc-requests__h2; col-xs-12" id="vsc-requests-h2">
@@ -204,11 +196,11 @@
                                     <table
                                         style="width:100%; border-top: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
-                                            <th class="col-xs-4">Indice:</br>{{lancamentos.indice}}</th>
-                                            <th class="col-xs-4">Total de Paginas: </br>{{lancamentos.tamanhoPagina}}</th>
+                                            <th class="col-xs-4">Indice:</br>{{indice}}</th>
+                                            <th class="col-xs-4">Total de Paginas: </br>{{tamanhoPagina}}</th>
                                             <th class="col-xs-4"
                                                 style="background-color:#00aeef; border-bottom-right-radius: 25px; border-top-left-radius: 25px; color: white">
-                                                Total de Elementos: </br>{{lancamentos.totalElements}}</th>
+                                                Total de Elementos: </br>{{totalElements}}</th>
                                         </tr>
                                     </table>
                                 </div>

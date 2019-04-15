@@ -64,11 +64,12 @@
                                         id="vsc-requests-subtitle" style="margin-left: 10px;">Dados de extrato para
                                         consultar o(s) lançamento(s).</p>
 
-                                        <div class="form-group">
-                                            <label for="exampleInputName2"class="col-xs-6">Data de Lançamento</label>
-                                            <span>class="col-xs-6">{{lancamento.dataLancamentoContaCorrenteCliente}}</span>>
-                                            <table>
-                                                </thead>
+                                    <table class="table" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="col-xs-6">Data de Lançamento</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.dataLancamentoContaCorrenteCliente}}</th>
+                                            </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Descrição</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</th>
@@ -90,7 +91,7 @@
                                                 <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}} 
                                                     Ag. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}} </br>
                                                     CC. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
-                                            </tr>>
+                                            </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Valor Final</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa}}</th>

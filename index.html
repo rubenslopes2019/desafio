@@ -92,15 +92,14 @@
                                                     <th scope="col" class="col-xs-2">Operação</th>
                                                 </tr>
                                             </table>
-                                            <table  tr ng-repeat = "contaCorrente in lancamento.lancamentoContaCorrenteCliente"
-                                                style="background-color: rgb(126, 123, 123); color: white; width: 600px">
+                                            <table style="background-color: rgb(126, 123, 123); color: white; width: 600px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">{{numeroRemessaBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.numeroRemessaBanco}}</th>
                                                     <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.nomeSituacaoRemessa}}</th>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.codigoBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.numeroAgencia}}</th>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.numeroContaCorrente}}</th>
-                                                    <th scope="col" class="col-xs-2">{{contaCorrente.nomeTipoOperacao}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.codigoBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</th>
                                                 </tr>
                                             </table>
                                         </div>

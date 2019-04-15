@@ -145,29 +145,7 @@
                                         </thead>
                                         </tbody>
                                     </table>
-
-                                    <div>
-                                            <div _ngcontent-c2="" class="vsc-requests__button--align; align-items: center">
-                                                    <button
-                                                    _ngcontent-c2="" color="accent" id="vsc-requests-btn"
-                                                    mat-raised-button="" class="mat-raised-button mat-accent"
-                                                    data-analyticsaction="Formulário"
-                                                     style="height: 30px; width: 100px"
-                                                     ng-click="{{lancamento.indice}} = {{lancamento.indice}} - 1"><span
-                                                        class="mat-button-wrapper">anterior</span>
-                                                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
-                                                    <div class="mat-button-focus-overlay"></div>
-                                                </button><p> </p> <button
-                                                    _ngcontent-c2="" color="accent" id="vsc-requests-btn"
-                                                    mat-raised-button="" class="mat-raised-button mat-accent"
-                                                    data-analyticsaction="Formulário"
-                                                     style="height: 30px; width: 100px"
-                                                    ng-click="{{lancamento.indice}} = {{lancamento.indice}} + 1"><span
-                                                        class="mat-button-wrapper">Proximo</span>
-                                                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
-                                                    <div class="mat-button-focus-overlay"></div>
-                                                </button></div>
-                                    </div>
+                                    <dir-pagination-controls max-size="10" boundary-links="true"></dir-pagination-controls> 
                                     <table
                                         style="width:100%; border-top: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
@@ -181,7 +159,7 @@
                                 </div>
                             </div>
 
-                            <dir-pagination-controls max-size="10" boundary-links="true"></dir-pagination-controls>   
+                              
                         </section>
                     </vsc-requests>
                 </section>

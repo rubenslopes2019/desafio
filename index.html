@@ -94,12 +94,12 @@
                                             <table  tr ng-repeat = "conta in lancamento.lancamentoContaCorrenteCliente" on-finish-render="ngRepeatFinished"
                                                 style="background-color: rgb(126, 123, 123); color: white; width: 600px; height: 40px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">{{conta.numeroRemessaBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">{{conta.nomeSituacaoRemessa}}</th>
-                                                   <!-- <th scope="col" class="col-xs-2">{{conta.codigoBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.numeroRemessaBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.nomeSituacaoRemessa}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.codigoBanco}}</th>
                                                     <th scope="col" class="col-xs-2">{{conta.numeroAgencia}}</th>
-                                                    <th scope="col" class="col-xs-2">{{conta.numeroContaCorrente}}</th> -->
-                                                    <th scope="col" class="col-xs-2">{{conta.nomeTipoOperacao}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.numeroContaCorrente}}</th>
+                                                    <th scope="col" class="col-xs-2">{{lancamento.nomeTipoOperacao}}</th>
                                                 </tr>
                                             </table>
                                         </div>

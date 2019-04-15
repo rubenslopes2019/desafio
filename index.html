@@ -57,20 +57,18 @@
                                                 Valor do Lanç: (R$) </br>{{totalControleLancamento.valorLancamentos}}</th>
                                         </tr>
                                     </table>
-                                    <div>
-                                        <h2 _ngcontent-c2="" class="vsc-requests__h2; col-xs-12" id="vsc-requests-h2">
-                                            Extrato do
-                                            Cliente</h2>
-                                        <p _ngcontent-c2="" class="vsc-requests__default-text default-text text-left"
-                                            id="vsc-requests-subtitle" style="margin-left: 10px;">Dados de extrato para
-                                            consultar o(s)  lançamento(s).</p>
-                                    </div>    
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" class="col-xs-6">Data de Lançamento</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.dataLancamentoContaCorrenteCliente}}</th>
-                                            </tr>
+                                    <h2 _ngcontent-c2="" class="vsc-requests__h2; col-xs-12" id="vsc-requests-h2">
+                                        Extrato do
+                                        Cliente</h2>
+                                    <p _ngcontent-c2="" class="vsc-requests__default-text default-text text-left"
+                                        id="vsc-requests-subtitle" style="margin-left: 10px;">Dados de extrato para
+                                        consultar o(s) lançamento(s).</p>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputName2"class="col-xs-6">Data de Lançamento</label>
+                                            <span>class="col-xs-6">{{lancamento.dataLancamentoContaCorrenteCliente}}</span>>
+                                            <table>
+                                                </thead>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Descrição</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</th>
@@ -92,10 +90,10 @@
                                                 <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}} 
                                                     Ag. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}} </br>
                                                     CC. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
-                                            </tr>
+                                            </tr>>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Valor Final</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa | currency:'R$'}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa}}</th>
                                             </tr>
                                         </thead>
                                     </table>

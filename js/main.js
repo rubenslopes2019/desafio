@@ -1,1 +1,1 @@
-angular.module('alurapic', ['angularUtils.directives.dirPagination']); 
+angular.module('cielo', ['angularUtils.directives.dirPagination']); 

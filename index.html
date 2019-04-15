@@ -96,9 +96,9 @@
                                                 <tr>
                                                     <th scope="col" class="col-xs-2">{{conta.numeroRemessaBanco}}</th>
                                                     <th scope="col" class="col-xs-2">{{conta.nomeSituacaoRemessa}}</th>
-                                                    <th scope="col" class="col-xs-2">{{conta.codigoBanco}}</th>
+                                                   <!-- <th scope="col" class="col-xs-2">{{conta.codigoBanco}}</th>
                                                     <th scope="col" class="col-xs-2">{{conta.numeroAgencia}}</th>
-                                                    <th scope="col" class="col-xs-2">{{conta.numeroContaCorrente}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.numeroContaCorrente}}</th> -->
                                                     <th scope="col" class="col-xs-2">{{conta.nomeTipoOperacao}}</th>
                                                 </tr>
                                             </table>
@@ -121,35 +121,35 @@
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Grupo Pagamento</th>
-                                                <th scope="col" class="col-xs-6">{{descricaoGrupoPagamento}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.descricaoGrupoPagamento}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Identificador Único</th>
-                                                <th scope="col" class="col-xs-6">{{codigoIdentificadorUnico}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.codigoIdentificadorUnico}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Banco</th>
-                                                <th scope="col" class="col-xs-6">{{nomeBanco}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Quantidade de Lançamentos</th>
-                                                <th scope="col" class="col-xs-6">{{quantidadeLancamentoRemessa}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.quantidadeLancamentoRemessa}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">CNPJ</th>
-                                                <th scope="col" class="col-xs-6">{{numeroRaizCNPJ}}-{{numeroSufixoCNPJ}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.numeroRaizCNPJ}}-{{lancamento.numeroSufixoCNPJ}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Valor de Lançamento</th>
-                                                <th scope="col" class="col-xs-6">{{valorLancamentoRemessa}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Data de Lançamento</th>
-                                                <th scope="col" class="col-xs-6">{{dateLancamentoContaCorrenteCliente}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.dateLancamentoContaCorrenteCliente}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Data Efetivação</th>
-                                                <th scope="col" class="col-xs-6">{{dateEfetivaLancamento}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.dateEfetivaLancamento}}</th>
                                             </tr>
                                         </thead>
                                         </tbody>

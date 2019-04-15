@@ -6,9 +6,8 @@
     <meta name="theme-color" content="#00aeef">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <link rel="stylesheet" href="https://checkout.cielo.com.br/meus-pedidos/styles.71f22c2416100be0fd7f.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <script src="js/lib/angular.min.js"></script>
     <script src="js/lib/angular-animate.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>
@@ -46,10 +45,7 @@
                         <section _ngcontent-c2="" class="vsc-requests" id="vsc-requests">
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
-                                dir-paginate="lancamento in listaControleLancamento|filter:procurar|orderBy:sortKey:reverse|itemsPerPage:1">
-                               <!-- ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
-                                class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == {{lancamento.indice}} -1">
-                               -->                 
+                                dir-paginate="lancamento in listaControleLancamento|filter:procurar|orderBy:sortKey:reverse|itemsPerPage:1">              
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>

@@ -75,7 +75,7 @@
                                         </thead>
                                     </table>
 
-                                    <div style="position:relative;top:0;left:0;width:100%;overflow:auto">
+                                    <div style="position:relative;top:0;left:0;width:100%;overflow:auto" tr ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished">
                                         <div id="lancamentoContaCorrenteClienteDiv"
                                             ng-init="lancamentoContaCorrenteClienteDiv = true"
                                             ng-show="lancamentoContaCorrenteClienteDiv">
@@ -90,13 +90,13 @@
                                                     <th scope="col" class="col-xs-2">Operação</th>
                                                 </tr>
                                             </table>
-                                            <table  tr ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
+                                            <table  tr ng-repeat = "conta in lancamento.lancamentoContaCorrenteCliente" on-finish-render="ngRepeatFinished"></table>
                                                 style="background-color: rgb(126, 123, 123); color: white; width: 600px; height: 40px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.dataEfetivaLancamento}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente}}</th>
-                                                    <th scope="col" class="col-xs-2">{{listaControleLancamento[1].lancamentoContaCorrenteCliente[1].numeroRemessaBanco[1]}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.numeroRemessaBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">sdsd</th>
+                                                    <th scope="col" class="col-xs-2">2/th>
                                                     <th scope="col" class="col-xs-2">43434-4</th>
                                                     <th scope="col" class="col-xs-2">venda</th>
                                                 </tr>
@@ -112,7 +112,7 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col" class="col-xs-4">Data de Efetivação</th>
-                                                <th scope="col" class="col-xs-8">10/10/2000</th>
+                                                <th scope="col" class="col-xs-8">{{lancamento.dataEfetivaLancamento}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Data de Lançamento</th>

@@ -46,7 +46,7 @@
                         <section _ngcontent-c2="" class="vsc-requests" id="vsc-requests">
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
-                                dir-paginate="lancamento in listaControleLancamento|orderBy:sortKey:reverse|itemsPerPage:1">
+                                dir-paginate="lancamento in listaControleLancamento|filter:procurar|orderBy:sortKey:reverse|itemsPerPage:1">
                                <!-- ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
                                 class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == {{lancamento.indice}} -1">
                                -->                 

@@ -65,79 +65,35 @@
                                         consultar o(s)
                                         lançamento(s).</p>
 
-                                    <div style="position:relative;top:0;left:0;width:100%;overflow:auto">
-                                        <div id="lancamentoContaCorrenteClienteDiv"
-                                            ng-init="lancamentoContaCorrenteClienteDiv = true"
-                                            ng-show="lancamentoContaCorrenteClienteDiv">
-                                            <table
-                                                style="background-color: rgb(71, 68, 68); color: white;  width: 600px; height: 40px">
-                                                <tr>
-                                                    <th scope="col" class="col-xs-2">Remessa</th>
-                                                    <th scope="col" class="col-xs-2">Situação</th>
-                                                    <th scope="col" class="col-xs-2">Banco</th>
-                                                    <th scope="col" class="col-xs-2">Agencia</th>
-                                                    <th scope="col" class="col-xs-2">Conta</th>
-                                                    <th scope="col" class="col-xs-2">Operação</th>
-                                                </tr>
-                                            </table>
-                                            <table style="background-color: rgb(126, 123, 123); color: white; width: 600px">
-                                                <tr>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.numeroRemessaBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.nomeSituacaoRemessa}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.codigoBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
-                                                    <th scope="col" class="col-xs-2">{{lancamento.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</th>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-
                                     <table class="table">
                                         <thead>
-                                            <tr>
-                                                <th scope="col" class="col-xs-4">Data de Efetivação</th>
-                                                <th scope="col" class="col-xs-8">{{lancamento.dataEfetivaLancamento}}</th>
-                                            </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Data de Lançamento</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.dataLancamentoContaCorrenteCliente}}</th>
                                             </tr>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">Evento</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.numeroEvento}}</th>
+                                                <th scope="col" class="col-xs-6">Descrição</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</th>
                                             </tr>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">Grupo Pagamento</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.descricaoGrupoPagamento}}</th>
+                                                <th scope="col" class="col-xs-6">Número</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.lancamentoContaCorrenteCliente.numeroRemessaBanco}}</th>
                                             </tr>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">Identificador Único</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.codigoIdentificadorUnico}}</th>
+                                                <th scope="col" class="col-xs-6">Situação</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.lancamentoContaCorrenteCliente.nomeSituacaoRemessa}}</th>
                                             </tr>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">Banco</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}}</th>
+                                                <th scope="col" class="col-xs-6">Data de Confirmação</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.dataEfetivaLancamento}</th>
                                             </tr>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">Quantidade de Lançamentos</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.quantidadeLancamentoRemessa}}</th>
-                                            </tr>
+                                                <th scope="col" class="col-xs-6">Dados Bancários</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}} Ag. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}} CC. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
+                                            </tr>>
                                             <tr>
-                                                <th scope="col" class="col-xs-6">CNPJ</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.numeroRaizCNPJ}}-{{lancamento.numeroSufixoCNPJ}}</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" class="col-xs-6">Valor de Lançamento</th>
+                                                <th scope="col" class="col-xs-6">Valor Final</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa}}</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" class="col-xs-6">Data de Lançamento</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.dateLancamentoContaCorrenteCliente}}</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" class="col-xs-6">Data Efetivação</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.dateEfetivaLancamento}}</th>
                                             </tr>
                                         </thead>
                                         </tbody>

@@ -49,8 +49,8 @@
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
                                         <tr>
-                                            <th class="col-xs-4">Qtd de Lançamento:</br>111111</th>
-                                            <th class="col-xs-4">Qtd de Remessa: </br>999</th>
+                                            <th class="col-xs-4">Qtd de Lançamento:</br>{{totalControleLancamento.quantidadeLancamentos}}</th>
+                                            <th class="col-xs-4">Qtd de Remessa: </br>{{totalControleLancamento.quantidadeRemessas}}</th>
                                             <th class="col-xs-4"
                                                 style="background-color:#00aeef; border-top-right-radius: 25px; border-bottom-left-radius: 25px; color: white">
                                                 Valor do Lanç: (R$) </br>{{totalControleLancamento.valorLancamentos}}</th>
@@ -93,32 +93,8 @@
                                             <table
                                                 style="background-color: rgb(126, 123, 123); color: white; width: 600px; height: 40px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">12120</th>
-                                                    <th scope="col" class="col-xs-2">ativo</th>
-                                                    <th scope="col" class="col-xs-2">itau</th>
-                                                    <th scope="col" class="col-xs-2">434</th>
-                                                    <th scope="col" class="col-xs-2">43434-4</th>
-                                                    <th scope="col" class="col-xs-2">venda</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" class="col-xs-2">12120</th>
-                                                    <th scope="col" class="col-xs-2">ativo</th>
-                                                    <th scope="col" class="col-xs-2">itau</th>
-                                                    <th scope="col" class="col-xs-2">434</th>
-                                                    <th scope="col" class="col-xs-2">43434-4</th>
-                                                    <th scope="col" class="col-xs-2">venda</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" class="col-xs-2">12120</th>
-                                                    <th scope="col" class="col-xs-2">ativo</th>
-                                                    <th scope="col" class="col-xs-2">itau</th>
-                                                    <th scope="col" class="col-xs-2">434</th>
-                                                    <th scope="col" class="col-xs-2">43434-4</th>
-                                                    <th scope="col" class="col-xs-2">venda</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" class="col-xs-2">12120</th>
-                                                    <th scope="col" class="col-xs-2">ativo</th>
+                                                    <th scope="col" class="col-xs-2">{{listaControleLancamento.lancamentoContaCorrenteCliente}}</th>
+                                                    <th scope="col" class="col-xs-2">{{listaControleLancamento.lancamentoContaCorrenteCliente.nomeSituacaoRemessa[1]}}</th>
                                                     <th scope="col" class="col-xs-2">itau</th>
                                                     <th scope="col" class="col-xs-2">434</th>
                                                     <th scope="col" class="col-xs-2">43434-4</th>

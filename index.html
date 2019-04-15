@@ -46,7 +46,7 @@
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
                                 ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
-                                class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == 0">
+                                class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == lancamento.indice">
                                                  
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
@@ -151,7 +151,7 @@
                                                     mat-raised-button="" class="mat-raised-button mat-accent"
                                                     data-analyticsaction="Formulário"
                                                      style="height: 30px; width: 100px"
-                                                     ng-click="$index == $index - 1"><span
+                                                     ng-click="lancamento.indice == lancamento.indice - 1"><span
                                                         class="mat-button-wrapper">anterior</span>
                                                     <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                                     <div class="mat-button-focus-overlay"></div>
@@ -160,7 +160,7 @@
                                                     mat-raised-button="" class="mat-raised-button mat-accent"
                                                     data-analyticsaction="Formulário"
                                                      style="height: 30px; width: 100px"
-                                                    ng-click="$index == $index + 1"><span
+                                                    ng-click="lancamento.indice == lancamento.indice + 1"><span
                                                         class="mat-button-wrapper">Proximo</span>
                                                     <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                                     <div class="mat-button-focus-overlay"></div>

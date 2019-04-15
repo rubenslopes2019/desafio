@@ -44,7 +44,8 @@
                     <vsc-requests _nghost-c2="" class="ng-star-inserted">
                         <section _ngcontent-c2="" class="vsc-requests" id="vsc-requests">
                             <div _ngcontent-c2="" class="vsc-container">
-                                <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders">
+                                <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
+                                ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished">
                                                  
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">
@@ -75,7 +76,7 @@
                                         </thead>
                                     </table>
 
-                                    <div style="position:relative;top:0;left:0;width:100%;overflow:auto" tr ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished">
+                                    <div style="position:relative;top:0;left:0;width:100%;overflow:auto">
                                         <div id="lancamentoContaCorrenteClienteDiv"
                                             ng-init="lancamentoContaCorrenteClienteDiv = true"
                                             ng-show="lancamentoContaCorrenteClienteDiv">
@@ -93,20 +94,16 @@
                                             <table  tr ng-repeat = "conta in lancamento.lancamentoContaCorrenteCliente" on-finish-render="ngRepeatFinished"
                                                 style="background-color: rgb(126, 123, 123); color: white; width: 600px; height: 40px">
                                                 <tr>
-                                                    <th scope="col" class="col-xs-2">{{conta}}</th>
                                                     <th scope="col" class="col-xs-2">{{conta.numeroRemessaBanco}}</th>
-                                                    <th scope="col" class="col-xs-2">sdsd</th>
-                                                    <th scope="col" class="col-xs-2">2/th>
-                                                    <th scope="col" class="col-xs-2">43434-4</th>
-                                                    <th scope="col" class="col-xs-2">venda</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.nomeSituacaoRemessa}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.codigoBanco}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.numeroAgencia}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.numeroContaCorrente}}</th>
+                                                    <th scope="col" class="col-xs-2">{{conta.nomeTipoOperacao}}</th>
                                                 </tr>
                                             </table>
                                         </div>
                                     </div>
-
-
-
-
 
                                     <table class="table">
                                         <thead>

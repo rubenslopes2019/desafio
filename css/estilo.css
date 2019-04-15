@@ -120,9 +120,9 @@
             }
         }
 
-        @media only screen and (min-width:992px) and (-ms-high-contrast:active),
-        only screen and (min-width:992px) and (-ms-high-contrast:none) {
+        @media only screen and (min-width:320px) and (-ms-high-contrast:active),
+        only screen and (min-width:320px) and (-ms-high-contrast:none) {
             .vsc-requests[_ngcontent-c2] {
-                margin-left: 150px
+                margin-left: 20px
             }
         }

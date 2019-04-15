@@ -45,7 +45,8 @@
                         <section _ngcontent-c2="" class="vsc-requests" id="vsc-requests">
                             <div _ngcontent-c2="" class="vsc-container">
                                 <div _ngcontent-c2="" class="col-xs-12; vsc-requests__my-orders"
-                                ng-repeat = "lancamento in listaControleLancamento(0)" on-finish-render="ngRepeatFinished">
+                                ng-repeat = "lancamento in listaControleLancamento" on-finish-render="ngRepeatFinished"
+                                class="set-holder {{lancamento.class}}" droppable="{{lancamento.type}}" ng-if="$index == 0">
                                                  
                                     <table 
                                         style="width:100%; border-bottom: 1px solid rgb(170, 162, 162); color:  rgb(170, 162, 162); border-collapse: collapse">

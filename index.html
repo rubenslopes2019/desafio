@@ -62,8 +62,7 @@
                                         Cliente</h2>
                                     <p _ngcontent-c2="" class="vsc-requests__default-text default-text text-left"
                                         id="vsc-requests-subtitle" style="margin-left: 10px;">Dados de extrato para
-                                        consultar o(s)
-                                        lançamento(s).</p>
+                                        consultar o(s)  lançamento(s).</p>
 
                                     <table class="table">
                                         <thead>
@@ -85,18 +84,19 @@
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Data de Confirmação</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.dataEfetivaLancamento}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.dataEfetivaLancamento}}</th>
                                             </tr>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Dados Bancários</th>
-                                                <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}} Ag. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}} CC. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
+                                                <th scope="col" class="col-xs-6">{{lancamento.nomeBanco}} 
+                                                    Ag. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia}} </br>
+                                                    CC. {{lancamento.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}}</th>
                                             </tr>>
                                             <tr>
                                                 <th scope="col" class="col-xs-6">Valor Final</th>
                                                 <th scope="col" class="col-xs-6">{{lancamento.valorLancamentoRemessa}}</th>
                                             </tr>
                                         </thead>
-                                        </tbody>
                                     </table>
                                     <dir-pagination-controls max-size="10" boundary-links="true"></dir-pagination-controls> 
                                     <table

@@ -2,6 +2,8 @@
 package br.com.itau.cobranca.dao.impl;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
 
 
 import javax.persistence.EntityManager;
@@ -31,11 +33,10 @@ public class TitulosDAOImpl implements ITituloDAO {
 
 	@Override
 	@AuditLog(type = Type.CONSULTA)
-	//public ConsultaPropostaProcDTO buscarProposta(PropostaDTO proposta)
-		public TitulosProcDTO listarTitulo(TituloDTO titulo)
+		public List<TitulosProcDTO> listarTitulo(TituloDTO titulo)
 			throws IllegalArgumentException, IllegalAccessException {
 
-		TitulosProcDTO titulosProcDTO = new TitulosProcDTO();
+		List<TitulosProcDTO> titulosProcDTO = new ArrayList<TitulosProcDTO>();
 		StoredProcedureQuery storedProcedure;
 		storedProcedure = this.em.createStoredProcedureQuery("DBAPRD1.SP_CONSULTAR_TITULOS");
 

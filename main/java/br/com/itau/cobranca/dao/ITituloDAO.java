@@ -2,6 +2,7 @@ package br.com.itau.cobranca.dao;
 
 import br.com.itau.cobranca.dto.TituloDTO;
 import br.com.itau.cobranca.dto.TitulosProcDTO;
+import java.util.List;
 
 public interface ITituloDAO {
 
@@ -13,6 +14,6 @@ public interface ITituloDAO {
 	 * @throws IllegalArgumentException
 	 * @throws IllegalAccessException
 	 */
-	TitulosProcDTO listarTitulo(TituloDTO titulo)
+	List<TitulosProcDTO> listarTitulo(TituloDTO titulo)
 			throws IllegalArgumentException, IllegalAccessException;
 }

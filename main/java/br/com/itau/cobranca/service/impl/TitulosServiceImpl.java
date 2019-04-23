@@ -10,6 +10,7 @@ import br.com.itau.cobranca.dto.TitulosProcDTO;
 import br.com.itau.cobranca.log.AuditLog;
 import br.com.itau.cobranca.log.AuditLog.Type;
 import br.com.itau.cobranca.service.ITitulosService;
+import java.util.List;
 
 
 @Service
@@ -23,7 +24,7 @@ public abstract class TitulosServiceImpl implements ITitulosService {
 
 	@Override
 	@AuditLog(type = Type.CONSULTA)
-	public TitulosProcDTO listarTitulos(TituloDTO titulo) throws IllegalArgumentException, IllegalAccessException {
+	public List<TitulosProcDTO> listarTitulos(TituloDTO titulo) throws IllegalArgumentException, IllegalAccessException {
 		return titulosDAO.listarTitulo(titulo);
 	}
 	

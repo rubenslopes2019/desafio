@@ -1,7 +1,8 @@
-package br.com.bradesco.bcpa.service;
+package br.com.itau.cobranca.service;
 
-import br.com.bradesco.bcpa.dto.TituloDTO;
-import br.com.bradesco.bcpa.dto.TitulosProcDTO;
+import java.util.List;
+import br.com.itau.cobranca.dto.TituloDTO;
+import br.com.itau.cobranca.dto.TitulosProcDTO;
 
 public interface ITitulosService {
 

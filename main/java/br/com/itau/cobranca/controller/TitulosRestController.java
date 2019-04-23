@@ -18,6 +18,7 @@ import br.com.itau.cobranca.log.AuditLog.Type;
 import br.com.itau.cobranca.service.ITitulosService;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import java.util.List;
 
 @RestController
 @RequestMapping("/cobranca")
@@ -34,7 +35,7 @@ public class TitulosRestController extends AbstractRestHandler {
 	@ResponseStatus(value = HttpStatus.OK)
 	@AuditLog(type = Type.CONSULTA)
 	@ResponseBody
-	public TitulosProcDTO listarTitulos(@RequestBody TituloDTO titulos)
+	public List<TitulosProcDTO> listarTitulos(@RequestBody TituloDTO titulos)
 			throws IllegalArgumentException, IllegalAccessException {
 		return titulosService.listarTitulos(titulos);
 	}

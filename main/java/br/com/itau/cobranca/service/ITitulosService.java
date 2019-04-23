@@ -16,7 +16,7 @@ public interface ITitulosService {
 	 * @throws IllegalAccessException
 	 */
 	
-	TitulosProcDTO listarTitulos(TituloDTO titulo) throws IllegalArgumentException, IllegalAccessException ;
+	List<TitulosProcDTO> listarTitulos(TituloDTO titulo) throws IllegalArgumentException, IllegalAccessException ;
 
 	
 }
